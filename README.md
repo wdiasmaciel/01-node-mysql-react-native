@@ -12,3 +12,7 @@ Nós vamos utilizar o **GitHub Codespaces** para realizar as nossas práticas. I
 4. Aguarde alguns instantes até que o VS Code abra no seu navegador.
 
 ---
+
+## Configurar o Ambiente: instalar o Node, o MySQL e o React Native
+
+No Codespaces, adicione o Node, o MySQL e o React Native diretamente no container do Codespace usando um arquivo de configuração devcontainer.json.
