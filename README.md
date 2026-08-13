@@ -15,7 +15,7 @@ Nós vamos utilizar o **GitHub Codespaces** para realizar as nossas práticas. I
 
 ## Configurar o Ambiente: instalar o Node, o MySQL e o React Native
 
-No Codespaces, adicione o `Node.js`, o `MySQL`, a extensão `Database Client` do `VS Code` e o `React Native` diretamente no container do `Codespace` usando um arquivo de configuração `devcontainer.json`. 
+No Codespaces, adicione o `Node.js`, o `MySQL` e a extensão `Database Client` do `VS Code` diretamente no container do `Codespace`, usando um arquivo de configuração `devcontainer.json`. 
 
 Além disso, inicie o serviço do `MySQL` de forma automática assim que o `Codespaces` abrir.
 
@@ -32,9 +32,13 @@ Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. De
       ]
     }
   },
-  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y mysql-server git-lfs && git lfs install",
+  "onCreateCommand": "sudo apt update && sudo apt install -y nodejs npm && sudo apt-get install -y mysql-server git-lfs && git lfs install",
   "postStartCommand": "sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld && sudo /usr/sbin/mysqld --user=mysql &"
 }
 ```
 
 ---
+
+## Rebuild
+
+No `VS Code` do `Codespaces`, digite `CTRL + SHIFT + P`. Na barra de pesquisa digite `rebuild`. Selecione a opção `Codespaces: Rebuild Container`.
