@@ -136,7 +136,7 @@ npm install express mysql2 cors
 
 **OBS**: verifique a inclusão dessas dependências no arquivo `package.json`:
 
-```
+```json
 {
   "name": "meu-app",
   "version": "1.0.0",
