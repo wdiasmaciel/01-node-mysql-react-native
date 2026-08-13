@@ -247,14 +247,15 @@ INSERT INTO pedido (id_cliente, id_livro, data_pedido, quantidade) VALUES
 
 ---
 
-## 🛠️ Passo 2: Inicializando o Servidor MySQL no Terminal
+## Inicializando o Servidor MySQL no Terminal
 
-Como o ambiente roda em uma versão moderna do Ubuntu (26.04+), precisamos ligar o motor do banco de dados manualmente caso ele não inicie sozinho. Abra o terminal do VS Code e execute os seguintes comandos:
+No terminal do VS Code, execute os seguintes comandos:
 
 1. **Limpe processos travados antigos (se houver):**
-   ```bash
-   sudo killall -9 mysqld mysqld_safe
-   ```
+
+```bash
+sudo killall -9 mysqld mysqld_safe
+```
 
 2. **Crie e dê permissão para as pastas do sistema:**
    ```bash
