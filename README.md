@@ -258,32 +258,40 @@ sudo killall -9 mysqld mysqld_safe
 ```
 
 2. **Crie e dê permissão para as pastas do sistema:**
-   ```bash
-   sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld
-   ```
+
+```bash
+sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld
+```
 
 3. **Inicie o servidor MySQL em segundo plano:**
-   ```bash
-   sudo /usr/sbin/mysqld --user=mysql &
-   ```
-   *(Após dar Enter, algumas linhas de log vão aparecer. **Aperte a tecla ENTER mais uma vez** para liberar a linha de comando).*
+
+```bash
+sudo /usr/sbin/mysqld --user=mysql &
+```
+
+*(Após dar Enter, algumas linhas de log vão aparecer. **Aperte a tecla ENTER mais uma vez** para liberar a linha de comando).*
 
 4. **Defina a senha do usuário Root para a extensão:**
-   Conecte no terminal administrativo:
-   ```bash
-   sudo mysql --protocol=socket -u root
-   ```
-   Dentro do prompt `mysql>`, cole o comando abaixo e aperte Enter:
-   ```sql
-   ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
-   FLUSH PRIVILEGES;
-   EXIT;
-   ```
+
+Conecte no terminal administrativo:
+
+```bash
+sudo mysql --protocol=socket -u root
+```
+
+Dentro do prompt `mysql>`, cole o comando abaixo e tecle `<Enter>`:
+
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
+FLUSH PRIVILEGES;
+EXIT;
+```
 
 5. **Importe o script de dados inicial:**
-   ```bash
-   sudo mysql -u root < init.sql
-   ```
+
+```bash
+sudo mysql -u root -proot < init.sql
+```
 
 ---
 
