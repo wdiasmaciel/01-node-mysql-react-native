@@ -304,6 +304,22 @@ sudo mysql -u root -p
 ```
 
 O terminal vai pedir a senha de forma protegida. Digite root, tecle `<Enter>`. Com isso, o script init.sql será executado.
+
+---
+
+## Verificando os Dados da Tabela de Clientes
+
+No prompt `mysql>` informe:
+
+```sql
+USE livraria_db;
+```
+
+```sql
+SELECT * FROM cliente;
+```
+
+![Tabela de Clientes.](./figuras/tabela-cliente.png)
 ---
 
 ## Configurando a Extensão "Database Client"
