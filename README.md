@@ -243,5 +243,63 @@ INSERT INTO pedido (id_cliente, id_livro, data_pedido, quantidade) VALUES
 (1, 1, '2026-03-05', 1), -- Ana comprou Introdução ao SQL
 (2, 3, '2026-03-06', 2), -- Bruno comprou 2 Lógicas de Programação
 (1, 2, '2026-03-07', 1); -- Ana comprou Bancos de Dados Relacionais
-
 ```
+
+---
+
+## 🛠️ Passo 2: Inicializando o Servidor MySQL no Terminal
+
+Como o ambiente roda em uma versão moderna do Ubuntu (26.04+), precisamos ligar o motor do banco de dados manualmente caso ele não inicie sozinho. Abra o terminal do VS Code e execute os seguintes comandos:
+
+1. **Limpe processos travados antigos (se houver):**
+   ```bash
+   sudo killall -9 mysqld mysqld_safe
+   ```
+
+2. **Crie e dê permissão para as pastas do sistema:**
+   ```bash
+   sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld
+   ```
+
+3. **Inicie o servidor MySQL em segundo plano:**
+   ```bash
+   sudo /usr/sbin/mysqld --user=mysql &
+   ```
+   *(Após dar Enter, algumas linhas de log vão aparecer. **Aperte a tecla ENTER mais uma vez** para liberar a linha de comando).*
+
+4. **Defina a senha do usuário Root para a extensão:**
+   Conecte no terminal administrativo:
+   ```bash
+   sudo mysql --protocol=socket -u root
+   ```
+   Dentro do prompt `mysql>`, cole o comando abaixo e aperte Enter:
+   ```sql
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+
+5. **Importe o script de dados inicial:**
+   ```bash
+   sudo mysql -u root < init.sql
+   ```
+
+---
+
+## 🗄️ Passo 3: Configurando a Extensão "Database Client"
+
+Para não precisar do MySQL Workbench, usamos a extensão visual embutida.
+
+1. Na barra lateral esquerda do VS Code, clique no ícone de **Banco de Dados** (tomada/cilindros).
+2. Clique no botão **`+`** (Create Connection).
+3. Escolha o tipo de banco: **MySQL**.
+4. Preencha os campos exatamente assim:
+   - **Host:** `localhost`
+   - **Username:** `root`
+   - **Password:** `root`
+   - **Database:** `livraria_db` *(ou deixe em branco)*
+5. Clique no botão **Connect**.
+
+Pronto! O banco `livraria_db` com as tabelas de clientes, livros e pedidos aparecerá visualmente na sua lateral esquerda.
+
+---
