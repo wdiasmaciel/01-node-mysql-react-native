@@ -372,3 +372,5 @@ A partir do exemplo desta prática, em novo repositório, crie um banco de dados
 1. Uma loja que vende equipamento de informática. O banco de dados deve ter as tabelas: cliente, produto e pedido.
 
 2. Um site de viagens. O banco de dados deve ter as tabelas: cliente, destino turístico e pacote de viagem.
+
+3. Gerenciar o estoque de produtos de uma empresa em cada uma de suas filiais.
