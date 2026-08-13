@@ -308,8 +308,6 @@ O terminal vai pedir a senha de forma protegida. Digite root, tecle `<Enter>`. C
 
 ## Configurando a Extensão "Database Client"
 
-Para não precisar do MySQL Workbench, usamos a extensão visual embutida.
-
 1. Na barra lateral esquerda do VS Code, clique no ícone de **Banco de Dados** (tomada/cilindros).
 2. Clique no botão **`+`** (Create Connection).
 3. Escolha o tipo de banco: **MySQL**.
@@ -320,6 +318,6 @@ Para não precisar do MySQL Workbench, usamos a extensão visual embutida.
    - **Database:** `livraria_db` *(ou deixe em branco)*
 5. Clique no botão **Connect**.
 
-Pronto! O banco `livraria_db` com as tabelas de clientes, livros e pedidos aparecerá visualmente na sua lateral esquerda.
+O banco `livraria_db` com as tabelas de cliente, livro e pedido aparecerá na barra lateral esquerda.
 
 ---
