@@ -23,7 +23,7 @@ Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. De
 
 ```json
 {
-  "name": "Aulas de Banco de Dados (MySQL)",
+  "name": "Aulas de Node.js, Banco de Dados (MySQL) e React Native",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "customizations": {
     "vscode": {
@@ -42,3 +42,21 @@ Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. De
 ## Rebuild
 
 No `VS Code` do `Codespaces`, digite `CTRL + SHIFT + P`. Na barra de pesquisa digite `rebuild`. Selecione a opção `Codespaces: Rebuild Container`. Clique no botão `Rebuild`. Aguarde o término do processamento.
+
+## Visualizar a versão instalado do Node.js, do Node Package Manager (NPM) e do MySQL:  
+
+No terminal, execute os comandos:
+
+```bash
+node -v 
+```
+
+```bash
+npm -v
+```
+
+```bash
+mysql --version
+```
+
+**OBS**: no caso do `MySQL`, pode ser que seja necessário executar `mysql -V` ou executar o comando `SELECT VERSION()`; após acessar o prompt do banco de dados.
