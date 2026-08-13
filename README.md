@@ -73,13 +73,13 @@ No terminal, execute o comando abaixo:
 npm init
 ```
 
-Informe o nome do projeto, ou apenas pressionar a tecla `<ENTER>`: `meu-app`
+Informe o nome do projeto (package name), ou apenas pressionar a tecla `<ENTER>`: `meu-app`
 
 Informe a versão, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
 
 Informe uma descrição para o projeto:  `meu aplicativo`
 
-Informe o arquivo principal (inicial) da aplicação (entry point), ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+Informe o arquivo principal (inicial) da aplicação (entry point), ou apenas pressionar a tecla `<ENTER>`: `server.js`
 
 Informe um comando de teste, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
 
@@ -92,6 +92,37 @@ Informe o nome do autor do projeto, ou apenas pressionar a tecla `<ENTER>`: `<in
 Informe a licença do projeto, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
 
 Informe o tipo do projeto: `module`
+
+
+**OBS**: caso não seja requisitado o tipo do projeto, você terá que informar `"type": "module",`no arquivo `package.json` gerado:
+
+```json
+{
+  "name": "meu-app",
+  "version": "1.0.0",
+  "description": "meu aplicativo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdiasmaciel/01-node-mysql-react-native-bd.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL",
+    "React-Native"
+  ],
+  "author": "Wesley",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wdiasmaciel/01-node-mysql-react-native-bd/issues"
+  },
+  "homepage": "https://github.com/wdiasmaciel/01-node-mysql-react-native-bd#readme"
+}
+```
 
 ---
 
