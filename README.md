@@ -364,3 +364,11 @@ O banco `livraria_db` com as tabelas de cliente, livro e pedido aparecerá na ba
 ![Tela do Database Client.](./figuras/database-client.png)
 
 ---
+
+## Exercício
+
+A partir do exemplo desta prática, em novo repositório, crie um banco de dados para:
+
+1. Uma loja que vende equipamento de informática. O banco de dados deve ter as tabelas: cliente, produto e pedido.
+
+2. Um site de viagens. O banco de dados deve ter as tabelas: cliente, destino turístico e pacote de viagem.
