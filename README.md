@@ -43,6 +43,8 @@ Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. De
 
 No `VS Code` do `Codespaces`, digite `CTRL + SHIFT + P`. Na barra de pesquisa digite `rebuild`. Selecione a opção `Codespaces: Rebuild Container`. Clique no botão `Rebuild`. Aguarde o término do processamento.
 
+---
+
 ## Versão
 
 No terminal, execute os comandos abaixo, para visualizar a versão instalada do `Node.js`, do `Node Package Manager (NPM)` e do `MySQL`:  :
@@ -60,3 +62,46 @@ mysql --version
 ```
 
 **OBS**: no caso do `MySQL`, pode ser que seja necessário executar `mysql -V` ou executar o comando `SELECT VERSION()`; após acessar o prompt do banco de dados.
+
+---
+
+## Crie um Novo Projeto do Node.js
+
+No terminal, execute o comando abaixo:
+
+```bash
+npm init
+```
+
+Informe o nome do projeto, ou apenas pressionar a tecla `<ENTER>`: `meu-app`
+
+Informe a versão, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+
+Informe uma descrição para o projeto:  `meu aplicativo`
+
+Informe o arquivo principal (inicial) da aplicação (entry point), ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+
+Informe um comando de teste, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+
+Informe o repositório do projeto no `GitHub`, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+
+Informe as palavras-chave do projeto, ou apenas pressionar a tecla `<ENTER>`: `Node.js MySQL React-Native`
+
+Informe o nome do autor do projeto, ou apenas pressionar a tecla `<ENTER>`: `<informe seu nome>`
+
+Informe a licença do projeto, ou apenas pressionar a tecla `<ENTER>`: `<ENTER>`
+
+Informe o tipo do projeto: `module`
+
+---
+
+## Crie um Novo Projeto do Node.js
+
+No terminal, instale os pacotes abaixo:
+
+```bash
+npm install express mysql2 cors
+```
+
+---
+
