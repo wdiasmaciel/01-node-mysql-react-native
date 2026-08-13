@@ -335,6 +335,18 @@ SELECT * FROM livro;
 
 ---
 
+## Verificando os Dados da Tabela de Pedidos
+
+No prompt `mysql>` informe:
+
+```sql
+SELECT * FROM pedido;
+```
+
+![Tabela de Pedidos.](./figuras/tabela-pedido.png)
+
+---
+
 ## Configurando a Extensão "Database Client"
 
 1. Na barra lateral esquerda do VS Code, clique no ícone de **Banco de Dados** (tomada/cilindros).
