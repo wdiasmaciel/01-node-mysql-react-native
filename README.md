@@ -300,7 +300,7 @@ sudo mysql -u root -proot < init.sql
 Para entrar no console interativo agora que tem senha, use:
 
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 O terminal vai pedir a senha de forma protegida. Digite root, tecle `<Enter>`. Com isso, o script init.sql será executado.
