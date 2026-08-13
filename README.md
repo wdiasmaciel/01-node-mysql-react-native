@@ -126,7 +126,7 @@ Informe o tipo do projeto: `module`
 
 ---
 
-## Crie um Novo Projeto do Node.js
+## Pacotes: express, mysql2 e cors
 
 No terminal, instale os pacotes abaixo:
 
