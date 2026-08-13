@@ -320,6 +320,19 @@ SELECT * FROM cliente;
 ```
 
 ![Tabela de Clientes.](./figuras/tabela-cliente.png)
+
+---
+
+## Verificando os Dados da Tabela de Livros
+
+No prompt `mysql>` informe:
+
+```sql
+SELECT * FROM livro;
+```
+
+![Tabela de Livros.](./figuras/tabela-livro.png)
+
 ---
 
 ## Configurando a Extensão "Database Client"
