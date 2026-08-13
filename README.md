@@ -20,3 +20,21 @@ No Codespaces, adicione o `Node.js`, o `MySQL`, a extensão `Database Client` do
 Além disso, inicie o serviço do `MySQL` de forma automática assim que o `Codespaces` abrir.
 
 Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. Dentro dela, crie um arquivo chamado `devcontainer.json` com o código abaixo:
+
+```json
+{
+  "name": "Aulas de Banco de Dados (MySQL)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  },
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y mysql-server git-lfs && git lfs install",
+  "postStartCommand": "sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld && sudo /usr/sbin/mysqld --user=mysql &"
+}
+```
+
+---
