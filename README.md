@@ -361,4 +361,6 @@ SELECT * FROM pedido;
 
 O banco `livraria_db` com as tabelas de cliente, livro e pedido aparecerá na barra lateral esquerda.
 
+![Tela do Database Client.](./figuras/database-client.png)
+
 ---
