@@ -219,13 +219,13 @@ INSERT INTO cliente (nome, email, data_cadastro) VALUES
 ('Carlos Souza', 'carlos.souza@email.com', '2026-03-01');
 
 -- Inserindo Livros
-INSERT INTO livros (titulo, autor, preco, estoque) VALUES
+INSERT INTO livro (titulo, autor, preco, estoque) VALUES
 ('Introdução ao SQL', 'Luke Code', 49.90, 15),
 ('Bancos de Dados Relacionais', 'Maria Ramalho', 89.90, 8),
 ('Lógica de Programação', 'Alan Turing', 35.00, 20);
 
 -- Inserindo Pedidos
-INSERT INTO pedidos (id_cliente, id_livro, data_pedido, quantidade) VALUES
+INSERT INTO pedido (id_cliente, id_livro, data_pedido, quantidade) VALUES
 (1, 1, '2026-03-05', 1), -- Ana comprou Introdução ao SQL
 (2, 3, '2026-03-06', 2), -- Bruno comprou 2 Lógicas de Programação
 (1, 2, '2026-03-07', 1); -- Ana comprou Bancos de Dados Relacionais
