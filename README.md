@@ -45,7 +45,7 @@ No `VS Code` do `Codespaces`, digite `CTRL + SHIFT + P`. Na barra de pesquisa di
 
 ## Versão
 
-No terminal, execute os comandos abaixo, para visualizar a versão instalada do `Node.js, do `Node Package Manager (NPM)` e do `MySQL`:  :
+No terminal, execute os comandos abaixo, para visualizar a versão instalada do `Node.js`, do `Node Package Manager (NPM)` e do `MySQL`:  :
 
 ```bash
 node -v 
