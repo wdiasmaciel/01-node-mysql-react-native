@@ -134,5 +134,40 @@ No terminal, instale os pacotes abaixo:
 npm install express mysql2 cors
 ```
 
+**OBS**: verifique a inclusão dessas dependências no arquivo `package.json`:
+
+```
+{
+  "name": "meu-app",
+  "version": "1.0.0",
+  "description": "meu aplicativo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdiasmaciel/01-node-mysql-react-native-bd.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL",
+    "React-Native"
+  ],
+  "author": "Wesley",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wdiasmaciel/01-node-mysql-react-native-bd/issues"
+  },
+  "homepage": "https://github.com/wdiasmaciel/01-node-mysql-react-native-bd#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.3"
+  }
+}
+```
+
 ---
 
