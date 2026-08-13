@@ -43,9 +43,9 @@ Crie uma pasta chamada `.devcontainer` na raiz do seu repositório do GitHub. De
 
 No `VS Code` do `Codespaces`, digite `CTRL + SHIFT + P`. Na barra de pesquisa digite `rebuild`. Selecione a opção `Codespaces: Rebuild Container`. Clique no botão `Rebuild`. Aguarde o término do processamento.
 
-## Visualizar a versão instalado do Node.js, do Node Package Manager (NPM) e do MySQL:  
+## Versão
 
-No terminal, execute os comandos:
+No terminal, execute os comandos abaixo, para visualizar a versão instalada do `Node.js, do `Node Package Manager (NPM)` e do `MySQL`:  :
 
 ```bash
 node -v 
