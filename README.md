@@ -293,9 +293,20 @@ EXIT;
 sudo mysql -u root -proot < init.sql
 ```
 
+*(Lembre-se de deixar o -proot tudo junto. Se colocar espaço entre o -p e o root, o MySQL vai achar que root é o nome de um banco de dados e vai dar erro).*
+
+6. **Entrar no console com senha:**
+
+Para entrar no console interativo agora que tem senha, use:
+
+```bash
+mysql -u root -p
+```
+
+O terminal vai pedir a senha de forma protegida. Digite root, tecle `<Enter>`. Com isso, o script init.sql será executado.
 ---
 
-## 🗄️ Passo 3: Configurando a Extensão "Database Client"
+## Configurando a Extensão "Database Client"
 
 Para não precisar do MySQL Workbench, usamos a extensão visual embutida.
 
